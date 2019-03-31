@@ -11,14 +11,16 @@ class TodoStore {
     this.todos.push(todo);
   }
 
-  remove(todo) {
-    const item = this.todos.find(item => item.id === todo.id);
+  getItemById(id) {
+    return this.todos.find(item => item.id === id);
+  }
 
-    this.todos.remove(item);
+  remove(todo) {
+    this.todos.remove(this.getItemById(todo.id));
   }
 
   toggle(todo) {
-    const item = this.todos.find(item => item.id === todo.id);
+    const item = this.getItemById(todo.id);
 
     if (item) {
       item.done = !item.done;
@@ -26,4 +28,4 @@ class TodoStore {
   }
 }
 
-export default new TodoStore;
+export default new TodoStore();
