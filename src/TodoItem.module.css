@@ -1,0 +1,43 @@
+.item {
+  margin-bottom: 24px;
+  word-wrap: break-word;
+  font-family: haas, pragmatica, EllipsisFallback, Helvetica, Arial, sans-serif;
+  letter-spacing: inherit;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.item:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin-right: 16px;
+  background: #ffdd2d;
+}
+
+.item:hover > .remove,
+.item:hover > .done {
+  display: inline-block;
+}
+
+.itemDone {
+  text-decoration: line-through;
+}
+
+.remove {
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-block;
+  color: red;
+  display: none;
+}
+
+.done {
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-block;
+  color: green;
+  display: none;
+}

@@ -1,0 +1,62 @@
+.todoForm {
+  max-width: 600px;
+}
+
+.formRow {
+  display: flex;
+}
+
+.inputWrapper {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 56px;
+  border-radius: 4px 0px 0px 4px;
+  cursor: text;
+  background-clip: padding-box;
+  color: #333333;
+  transition-property: background-color, border-color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  border: 1px solid #ecf1f7;
+  background-color: #ecf1f7;
+  word-wrap: break-word;
+  font-family: Arial, sans-serif;
+  letter-spacing: inherit;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.inputWrapper:focus-within {
+  border: 1px solid black;
+  background: #fff;
+}
+
+.todoInput {
+  padding: 16px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.todoButton {
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  transition-property: background-color, border, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  color: #333333;
+  border: 1px solid #ffdd2d;
+  background-color: #ffdd2d;
+  border-radius: 0px 4px 4px 0px;
+  padding: 18px 39px 16px;
+  white-space: nowrap;
+}
+
+.todoButton:hover {
+  border-color: #fcc521;
+  background-color: #fcc521;
+}
